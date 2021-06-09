@@ -147,7 +147,7 @@ class Trainer:
     def add_train_hooks(self):
         optim_cfg = self.cfg.get('optimizer_config', None)
         if optim_cfg is not None:
-            self.add_hook(build_book(optim_cfg))
+            self.add_hook(build_hook(optim_cfg))
         else:
             self.add_hook(build_hook({'name': 'OptimizerHook'}))
 
