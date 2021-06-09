@@ -32,7 +32,7 @@ dataloader:
       drop_last: True
     dataset:
       name: TextImageDataset 
-      dataroot: /dbq/common/datasets/VL/FOOD101/captions/
+      dataroot: /your datasets/
       transforms:
         - name: ToRGB
         - name: RandomResizedCrop
