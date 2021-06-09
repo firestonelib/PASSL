@@ -159,7 +159,7 @@ class Trainer:
 
         timer_cfg = self.cfg.get('timer_config', None)
         if timer_cfg is not None:
-            self.add_hook(build_book(timer_cfg))
+            self.add_hook(build_hook(timer_cfg))
         else:
             self.add_hook(build_hook({'name': 'IterTimerHook'}))
         ckpt_cfg = self.cfg.get('checkpoint', None)
